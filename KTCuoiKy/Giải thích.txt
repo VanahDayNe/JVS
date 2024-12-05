@@ -1,0 +1,41 @@
+* index:
+- line 76: lấy phần tử chứa tên SP
+- line 77: Thay đổi tên sản phẩm 
+
+*TinhTien.js
+- line 4: lấy phần tử cha của nút và tạo bản sao. Bản sao được thêm vô giỏ hàng
+- line 5:khai báo btnXoa gán cho button trong bản sao
+- line 6: khai báo biến Price, lấy gtri đầu tiên trong thẻ span và chuyển thành số
+- line 8: Đổi văn bản trong button của bản sao thành "Xóa"
+- line 9: đặt thuộc tính để gọi hàm xoa, this đại diện cho nút bấm
+- line 10: Thêm bản sao vào chỗ có id là fu
+- line 11: Cộng giá của sp vào tổng tiền
+- line 12: cập nhật giỏ hàng
+- line 19: xóa sp khỏi chỗ có id là fu
+- line 20: Trừ giá của sp vào tổng tiền
+
+* KiemTra.js:
+(line 13-17)
+^: bắt đầu chuỗi
+$: kết thúc chuỗi
+A-Z: chữ hoa
+a-z: chữ thường
+À-ỹ: chữ cái tiếng Việt
+\s: dấu cách
++ : xuất hiện 1 hoặc nhiều lần
+\w: A-Z, a-z, 0-9, _
+([\.-]?\w+)*: xuất hiện 0 hoặc nhiều lần có chứa dấu . hoặc - và w+ theo sau w+
+@ : @
+@\w: sau @ là tên miền
+(\.\w{2,3}): dấu . và kết thúc tên miền = ký tự trong khoảng [2 or 3]
+{10,11}: có thể lặp lại nhìu lần trong khoảng 10 or 11 ký tự
+A-Za-z: đại diện cho tất cả chưc hoa và thường
+(?=.*[A-Za-z]): kiểm tra chứa ít nhất 1 chữ cái
+\d: đại diện cho tất cả từ 0-9
+(?=.*\d): kiểm tra chứa ít nhất 1 số
+@$!%#?&: ký tự đặc biệt
+(?=.*[@$!%#?&]): kiểm tra chứa ít nhất 1 ký tự đặc biệt
+{8,}: chuỗi chứa ít nhất 8 ký tự
+
+(line 27, 34,40,..)
+!regex... : nếu sai định dạng thì ...

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trang chủ</title>
+    <link rel="stylesheet" href="CuoiKy.css">
+</head>
+<body>
+    <script src="TinhTien.js"></script>
+    <div class="header">
+        <img src="Images/banner.jpg" alt="" width="1200px" height="200px"> <br>
+        Babies with love 
+      
+    </div>
+
+    <div class="menu">
+        <ul>
+            <li><a href="index.html">Trang chủ</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropbtn">Sản phẩm</a>
+                <div class="dropdown-content">
+                    <ul>
+                        <li><a href="#">Thú len</a></li>
+                        <li><a href="#"><Tr></Tr>Thú bông</a> </li>                                              
+                    </ul>              
+                </div>
+            </li>
+            <li> <a href="GioiThieu.html">Giới thiệu</a></li>
+            <li><a href="LienHe.html">Đăng Ký</a></li>
+        </ul>
+    </div >
+
+    
+    <div class="Main">
+        <div class="MainLeft">
+            <h3>DANH MỤC SẢN PHẨM</h3>
+            <ul>
+                <li>
+                    <a  href="#">Thú len</a>
+                    <ul>
+                        <li><a href="ThoLen.html">Thỏ len</a></li>
+                        <li><a href="#">Thỏ len 1</a></li>
+                        <li><a href="#">Teddy len</a></li>
+                        <li><a href="#">Ếch len</a></li>
+                    </ul>
+                </li>
+                <hr>
+                <li>
+                    <a  href="#">Thú bông</a>
+                    <ul>
+                        <li><a href="#">Chó bông</a></li>
+                        <li><a href="#">Thỏ bông</a></li>
+                        <li><a href="#">Cừu bông</a></li>
+                        <li><a href="#">Gấu trúc </a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="MainRight">
+            <img src="Images/banner2.jpg" alt="" width="1000px" height="200px"> <br>
+            <hr>
+
+            
+            <div class="dssp">
+                <div class="sp">
+                   <a href="ThoLen.html"><img src="Images/tholen.jpg" alt="" width="180px"></a> 
+                    <div class="thumb" >
+                        <h4>Thỏ len</h4>
+                        <span class="price">175000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+                    
+                   <script>
+                    var tenSp= document.querySelector(".thumb h4");
+                    tenSp.textContent = "Thỏ tai cụp"
+                   </script>
+                </div>
+
+                <div class="sp">
+                    <img src="Images/tholen1.jpg" alt="" width="180px">
+                    <div class="thumb" >
+                        <h4>Thỏ len 1</h4>
+                        <span class="price">150000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+
+                </div>
+
+                <div class="sp">
+                    <img src="Images/teddylen.jpg" alt="" width="180px">
+                    <div class="thumb" >
+                        <h4>Teddy len</h4>
+                        <span class="price">300000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+                </div>
+                
+                <div class="sp">                  
+                    <img src="Images/cho.png" alt="" width="180px">
+                    <div class="thumb" >
+                        <h4>Chó bông</h4>
+                        <span class="price">80000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+                </div>
+
+                <div class="sp">
+                    <img src="Images/thobong.jpg" alt="" width="180px">
+                    <div class="thumb" >
+                        <h4>Thỏ bông</h4>
+                        <span class="price">250000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+                </div>
+
+                <div class="sp">
+                    <img src="Images/cuu.png" alt="" width="180px">
+                    <div class="thumb" >
+                        <h4>Cừu bông</h4>
+                        <span class="price">185000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+                </div>
+
+                <div class="sp">
+                    <img src="Images/gautrucbong.jpg" alt="" width="180px">
+                    <div class="thumb" >
+                        <h4>Gấu trúc bông</h4>
+                        <span class="price">350000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+                </div>
+
+                <div class="sp">
+                    <img src="Images/echbong.jpg" alt="" width="180px">
+                    <div class="thumb" >
+                        <h4>Ếch len</h4>
+                        <span class="price">100000</span> <br>
+                        <button class="Buy" onclick="Them(this)">Mua hàng</button>
+                    </div>
+                </div>
+
+                
+            </div>
+            <br>
+           
+        </div>
+    </div>
+    <h3>GIỎ HÀNG CỦA BẠN</h3>
+    <table border="1" id="fu"></table>
+
+    <h3>TỔNG TIỀN: <span id="tong">0</span></h3>
+
+    <div class="footer">
+        <div class="M">
+            <a href="index.html">Trang chủ</a>
+            <a href="#">Sản phẩm</a>
+            <a href="GioiThieu.html">Giới thiệu</a>
+            <a href="LienHe.html">Liên hệ</a>
+        </div>
+        <p>Designed by Van Anh</p>
+    </div>
+
+</body>
+</html>
